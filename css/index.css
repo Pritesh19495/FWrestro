@@ -50,6 +50,7 @@ body{
     display: flex;
     gap: 1.5rem;
     align-items: center;
+    justify-content: center;
 }
 
 .hamburger-links li{
@@ -116,10 +117,9 @@ body{
     animation: translatetext 1000ms ease-in-out forwards;
 }
 .about-container-image{
-    flex-direction: 1;
-    height: 400px;
     flex: 1;
-    transform: translate(300px);
+    height: 400px;
+    transform: translateY(300px);
     animation: translateimage 1000ms ease-in-out forwards;
 }
 
@@ -130,7 +130,7 @@ body{
 }
 @keyframes translateimage {
     100%{
-        transform: translateX(0);
+        transform: translateY(0);
     } 
 }
 
