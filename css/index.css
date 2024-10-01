@@ -31,7 +31,7 @@ body{
  position: fixed;
  opacity: 0.85;
  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
- z-index: 2;
+ z-index: 99;
 }
 
 .navbar-container{
@@ -275,6 +275,9 @@ display: block;
     padding: 2rem;
 }
 
+.menuContainerText{
+    align-self: baseline;
+}
 .menuContainerText h1{
     font-size: 1.5rem;
 }
@@ -283,6 +286,7 @@ display: block;
     color: #16423C;
     font-size: 1.2rem;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 /*############################## Customer review###################################### */
@@ -417,6 +421,13 @@ display: block;
         text-align: center;
     }
 }
+
+@media(max-width:500px){
+     .menuContainer{
+        flex-direction: column;
+    }
+
+}
 @media(max-width:900px){
     .about-container, .cateogry-image-container{
         flex-direction: column;
@@ -428,6 +439,7 @@ display: block;
     .menu-container,.customer-rating-container,.contact-us-container{
         flex-direction: column;
     }
+
 
     .menu-container img{
         width: 150px;
